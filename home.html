@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <! -- imports -- !>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Arvo&family=Ubuntu:wght@300&family=Koulen&family=Bebas+Neue&family=Mulish:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <! -- end imports -- !>
+        <style>
+
+            .sidenav {
+              height: 100%;
+              width: 300px;
+              position: fixed;
+              z-index: 10;
+              top: 0;
+              left: 0;
+              background-color: #d1ccc0;
+              overflow-x: hidden;
+              padding-top: 210px;
+            }
+
+            .sidenav a {
+              text-decoration: none;
+              font-size: 18px;
+              color: #818181;
+              display: block;
+              font-family: 'Oswald', sans-serif;
+              margin-top:10px;
+              text-align: center;
+            }
+
+            .main {
+               /* Same as the width of the sidenav */
+              font-size: 28px; /* Increased text to enable scrolling */
+              padding: 80px 100px;
+              word-wrap: break-word;
+              color: #404040;
+              line-height: 0.9;
+              z-index: 9;
+              height: 800px;
+              height: 100%;
+              position:fixed;
+            }
+
+            @media screen and (max-height: 450px) {
+              .sidenav {padding-top: 15px;}
+              .sidenav a {font-size: 18px;}
+            }
+
+            .small{
+                margin-top:40px;
+                font-size: 19px;
+                /* font-family: 'Mulish', sans-serif; */
+                font-family: 'Arvo', serif;
+                text-align: justify;
+                color: #575656;
+                line-height: 1;
+            }
+
+            .medium{
+                font-size: 35px;
+                font-family: 'Bebas Neue', sans-serif;
+            }
+
+            .large{
+                font-size: 90px;
+                font-family: 'Bebas Neue', sans-serif;
+                color: #944e4e;
+            }
+
+            .less-space-top{
+                line-height: 0.5;
+            }
+
+            .container{
+                margin-left: 300px;
+                z-index: 9;
+                width: 100%;
+            }
+
+            .bg{
+                position:fixed;
+                padding:0;
+                margin:0;
+
+                top:0;
+                left:0;
+
+                width: 100%;
+                height: 100%;
+                background-color: #edebe6;
+                z-index: 8;
+            }
+
+            .footer{
+                margin-top: 180px;
+                font-family: 'Oswald', sans-serif;
+                color: #818181;
+                text-align: center;
+            }
+
+            .icons a{
+                font-size: 25px;
+                letter-spacing: 7px;
+                display: inline;
+            }
+
+            img{
+                border-radius: 50%;
+                float: right;
+                margin-right:20px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="sidenav">
+        <a href="home.html"><b>HOME</b></a>
+        <a href="about.html"><b>ABOUT</b></a>
+        <a href="works.html"><b>WORKS</b></a>
+        <div class="footer">
+            <div class="icons">
+                <a href="https://www.instagram.com/michelenguyenn/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/michele-nguyen-893516239/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/MicheleNguyenn"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+    <div class="main">
+        <div class="container">
+            <img src="profilo.jpg" width="190px">
+            <div class="medium">Hi, I'm</div>
+            <div class="large"><b>MICHELE NGUYEN</b></div>
+            <div class="medium less-space-top">developer</div>
+            <div class="small">I'm a full stack developer based in Milan, Italy.
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>
