@@ -10,60 +10,155 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <! -- end imports -- !>
         <style>
-            .sidenav{
-                height: 100%;
+            .header{
+                height: 60px;
                 position: fixed;
-                width: 300px;
-                background-color: #d1ccc0;
+                width: 100%;
+                background-color: #2b2b2b;
                 top: 0;
                 left: 0;
                 display: table;
+                z-index: 9;
+            }
+            .header-title{
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 30px;
+                display: table-cell;
+                padding-left: 30vw;
+                vertical-align: middle;
+                color: #d1d1d1;
+            }
+            .content {
+                background-color: #d1ccc0;
+                left: 0;
+                right: 0;
+                position: fixed;
+                z-index: 8;
+                height:100%;
+                width: 100%;
+                display: table;
+                overflow:scroll;
+            }
+
+            .content hr{
+                border: 0;
+                width: 460px;
+                height: 1px;
+                background: #2b2b2b;
+            }
+
+            .top {
+                font-size: 30px;
+                display: table-cell;
+                vertical-align: middle;
+                padding-right: 30vw;
+                text-align: right;
+                font-family: 'Oswald', sans-serif;
+                font-size: 20px;
+                word-spacing: 15px;
+            }
+
+            .icons a {
+                color: #3b3b3b;
+                text-decoration: none;
+                letter-spacing: 5px;
+                font-size: 25px;
+            }
+
+            .medium-link {
+                font-size: 20px;
+                color: #2b2b2b;
+                font-family: 'Oswald', sans-serif;
+                word-spacing: 15px;
+            }
+            .small{
+                font-size: 18px;
+                font-family: 'Arvo', sans-serif;
+                color: #3b3b3b;
+                line-height: 1.2;
+            }
+            .medium{
+                font-size: 35px;
+                font-family: 'Bebas Neue', sans-serif;
+                color: #3b3b3b;
+            }
+
+            .large {
+                font-size: 90px;
+                font-family: 'Bebas Neue', sans-serif;
+                color: #944e4e;
+            }
+
+            .content-text{
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                line-height: 0.9;
             }
 
             .footer {
-                position: fixed;
-                width: 300px;
-                left: 0;
-                bottom: 2%;
-                color: #818181;
+                font-size: 13px;
                 text-align: center;
+                font-family: 'Oswald', sans-serif;
             }
 
-            .icons a{
-                font-size: 25px;
-                letter-spacing: 7px;
-                display: inline;
+            .title-link{
+                text-decoration: none;
+                color: #d1d1d1;
             }
 
-            .footer-text{
-                font-size: 12px;
+
+            .link{
+                text-decoration: none;
+                color: #944e4e;
             }
 
-            .nav-menu{
-                display: table-cell;
-                text-align: center;
-                vertical-align: middle;
+            .link:hover, .title-link:hover {
+                color: #944e4e;
             }
         </style>
     </head>
     <body>
-    <div class="sidenav">
-        <div class="footer">
-            <div class="icons">
-                <a href="https://www.instagram.com/michelenguyenn/"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/michele-nguyen-893516239/"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/MicheleNguyenn"><i class="fa fa-github"></i></a>
+        <div class="header">
+            <div class="header-title">
+                <a href="index.html" class="title-link">MICHELE NGUYEN</a>
             </div>
-            <div class="footer-text">
-                site by Michele Nguyen
+            <div class="top">
+                <a href="works.html" class="title-link"><b>WORKS</b></a>
             </div>
         </div>
-        <div class="nav-menu">
-            home<br>
-            about<br>
-            works
+        <div class="content">
+            <div class="content-text">
+                <div class="medium">
+                    HI, I'M
+                </div>
+                <div class="large">
+                    MICHELE NGUYEN
+                </div>
+                <hr><br>
+                <div class="small">
+                    I'm a developer based in Milan, Italy.
+                    <br>
+                    I graduated in Computer Science and I'm now learning and practicing coding on my own.
+                    <br>
+                    I mostly use <a style="color: #944e4e;">Python</a> and <a style="color: #944e4e;">Django</a> framework, <a style="color: #944e4e;">HTML/CSS</a> and <a style="color: #944e4e;">SQL</a>.
+                    <br>
+                    You can find my works on my <a href="https://github.com/MicheleNguyenn" class="link">GitHub profile</a>.
+                    <br><br>
+                    You can check out my cv <a href="cv.pdf" class="link">here</a>
+                </div>
+                <br><br><br>
+                <div class="icons">
+                    <a href="https://www.instagram.com/michelenguyenn/" class="title-link"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/michele-nguyen-893516239/" class="title-link"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/MicheleNguyenn" class="title-link"><i class="fa fa-github"></i></a>
+                    <a href="mailto:michelenguyenn@gmail.com" class="title-link"><i class="fa fa-envelope"></i></a>
+                </div>
+                <br>
+                <div class="footer">
+                    Design by Michele Nguyen
+                </div>
+            </div>
         </div>
-    </div>
-
     </body>
 </html>
