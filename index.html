@@ -14,7 +14,7 @@
             .sidenav {
               height: 100%;
               width: 300px;
-              position: fixed;
+              position: absolute;
               z-index: 10;
               top: 0;
               left: 0;
@@ -97,12 +97,12 @@
             }
 
             .footer{
-                position: fixed;
-                bottom:1%;
-                left:8%;
+                position: relative;
+                margin-top:90%;
                 font-family: 'Oswald', sans-serif;
                 color: #818181;
                 text-align: center;
+                background-color:blue;
             }
 
             .icons a{
@@ -125,24 +125,31 @@
             .footer-text{
                 font-size: 12px;
             }
+
+            .container1{
+                padding-top:50%;
+                background-color:red;
+            }
         </style>
     </head>
     <body>
     <div class="sidenav">
-        <a href="index.html"><b>HOME</b></a>
-        <a href="about.html"><b>ABOUT</b></a>
-        <a href="works.html"><b>WORKS</b></a>
+        <div class="container1">
+            <a href="index.html"><b>HOME</b></a>
+            <a href="about.html"><b>ABOUT</b></a>
+            <a href="works.html"><b>WORKS</b></a>
+        </div>
         <div class="footer">
-            <div class="icons">
-                <a href="https://www.instagram.com/michelenguyenn/"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/michele-nguyen-893516239/"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/MicheleNguyenn"><i class="fa fa-github"></i></a>
-            </div>
-            <div class="footer-text">
-                site by Michele Nguyen
+                <div class="icons">
+                    <a href="https://www.instagram.com/michelenguyenn/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/michele-nguyen-893516239/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/MicheleNguyenn"><i class="fa fa-github"></i></a>
+                </div>
+                <div class="footer-text">
+                    site by Michele Nguyen
+                </div>
             </div>
         </div>
-    </div>
     <div class="bg"></div>
     <div class="main">
         <div class="container">
