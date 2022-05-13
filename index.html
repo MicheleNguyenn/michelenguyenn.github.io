@@ -10,99 +10,23 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <! -- end imports -- !>
         <style>
-
-            .sidenav {
-              height: 100%;
-              width: 300px;
-              position: absolute;
-              z-index: 10;
-              top: 0;
-              left: 0;
-              background-color: #d1ccc0;
-              overflow-x: hidden;
-            }
-
-            .sidenav a {
-              text-decoration: none;
-              font-size: 18px;
-              color: #818181;
-              display: block;
-              font-family: 'Oswald', sans-serif;
-              margin-top:10px;
-              text-align: center;
-            }
-
-            .main {
-               /* Same as the width of the sidenav */
-              font-size: 28px; /* Increased text to enable scrolling */
-              margin-top: 10%;
-              padding: 0px 100px;
-              word-wrap: break-word;
-              color: #404040;
-              line-height: 0.9;
-              z-index: 9;
-              height: 100%;
-              position:fixed;
-            }
-
-            @media screen and (max-height: 450px) {
-              .sidenav {padding-top: 15px;}
-              .sidenav a {font-size: 18px;}
-            }
-
-            .small{
-                margin-top:40px;
-                font-size: 19px;
-                width: 60%;
-                /* font-family: 'Mulish', sans-serif; */
-                font-family: 'Arvo', serif;
-                text-align: justify;
-                color: #575656;
-                line-height: 1;
-            }
-
-            .medium{
-                font-size: 35px;
-                font-family: 'Bebas Neue', sans-serif;
-            }
-
-            .large{
-                font-size: 90px;
-                font-family: 'Bebas Neue', sans-serif;
-                color: #944e4e;
-            }
-
-            .less-space-top{
-                line-height: 0.5;
-            }
-
-            .container{
-                margin-left: 300px;
-                z-index: 9;
-                width: 100%;
-            }
-
-            .bg{
-                position:fixed;
-                padding:0;
-                margin:0;
-
-                top:0;
-                left:0;
-
-                width: 100%;
+            .sidenav{
                 height: 100%;
-                background-color: #edebe6;
-                z-index: 8;
+                position: fixed;
+                width: 300px;
+                background-color: #d1ccc0;
+                top: 0;
+                left: 0;
+                display: table;
             }
 
-            .footer{
-                position: relative;
-                margin-top:90%;
-                font-family: 'Oswald', sans-serif;
+            .footer {
+                position: fixed;
+                width: 300px;
+                left: 0;
+                bottom: 2%;
                 color: #818181;
                 text-align: center;
-                background-color:blue;
             }
 
             .icons a{
@@ -111,55 +35,33 @@
                 display: inline;
             }
 
-            img{
-                border-radius: 50%;
-                float: right;
-                margin-right:20px;
-            }
-
-            .link{
-                color: #944e4e;
-                text-decoration: none;
-            }
-
             .footer-text{
                 font-size: 12px;
             }
 
-            .container1{
-                padding-top:50%;
-                background-color:red;
+            .nav-menu{
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
             }
         </style>
     </head>
     <body>
     <div class="sidenav">
-        <div class="container1">
-            <a href="index.html"><b>HOME</b></a>
-            <a href="about.html"><b>ABOUT</b></a>
-            <a href="works.html"><b>WORKS</b></a>
-        </div>
         <div class="footer">
-                <div class="icons">
-                    <a href="https://www.instagram.com/michelenguyenn/"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/michele-nguyen-893516239/"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://github.com/MicheleNguyenn"><i class="fa fa-github"></i></a>
-                </div>
-                <div class="footer-text">
-                    site by Michele Nguyen
-                </div>
+            <div class="icons">
+                <a href="https://www.instagram.com/michelenguyenn/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/michele-nguyen-893516239/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/MicheleNguyenn"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="footer-text">
+                site by Michele Nguyen
             </div>
         </div>
-    <div class="bg"></div>
-    <div class="main">
-        <div class="container">
-            <img src="profilo.jpg" width="190px">
-            <div class="medium">Hi, I'm</div>
-            <div class="large"><b>MICHELE NGUYEN</b></div>
-            <div class="medium less-space-top">developer</div>
-            <div class="small">
-                Email: michelenguyenn@gmail.com
-            </div>
+        <div class="nav-menu">
+            home<br>
+            about<br>
+            works
         </div>
     </div>
 
