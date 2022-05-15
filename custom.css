@@ -9,7 +9,7 @@ body {
      top: 0;
      left: 0;
      display: table;
-     z-index: 9;
+     z-index: 11;
      }
 .header-title{
      font-family: 'Bebas Neue', sans-serif;
@@ -27,7 +27,6 @@ body {
      bottom: 0;
      position: fixed;
      z-index: 8;
-     height: 100vh - 60px;
      width: 100%;
      overflow-y:auto;
      overflow-x: hidden;
@@ -85,7 +84,7 @@ body {
     line-height: 0.9;
     padding-left: 20vw;
     height: 100%;
-    width:75vw;
+    width:65vw;
     display:table;
 }
 
@@ -101,13 +100,16 @@ body {
     font-size:20px;
 }
 
+.title-link:hover {
+    color: #854242;
+}
 
 .link{
     text-decoration: none;
     color: #854242;
 }
 
-.link:hover, .title-link:hover {
+.link:hover {
     color: #854242;
 }
 
@@ -160,7 +162,7 @@ body {
 
 .icon-right{
     display: table-cell;
-    text-align: right;
+    text-align: center;
     vertical-align: middle;
     font-size: 50px;
     line-height: 1.5;
@@ -168,6 +170,17 @@ body {
 
 .icon-right a{
     color: #3b3b3b;
+}
+
+.right-bar {
+    width: 10vw;
+    background-color: #d1ccc0;
+    position:fixed;
+    height: calc(100% - 60px);
+    margin-left: 90vw;
+    z-index:10;
+    display: table;
+    top: 60px;
 }
 
 /* SCOLLBAR */
