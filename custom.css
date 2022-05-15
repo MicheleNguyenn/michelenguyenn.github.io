@@ -62,10 +62,11 @@ body {
      word-spacing: 15px;
 }
 .small{
-     font-size: 18px;
-     font-family: 'Arvo', sans-serif;
+     font-size: 20px;
+     font-family: 'Open Sans', sans-serif;
      color: #3b3b3b;
      line-height: 1.4;
+     width: 70vh;
 }
 .medium{
      font-size: 50px;
@@ -83,8 +84,9 @@ body {
     text-align: left;
     line-height: 0.9;
     padding-left: 20vw;
+    padding-right: 30vw;
     height: 100%;
-    width:65vw;
+    width:60vw;
     display:table;
 }
 
@@ -176,11 +178,28 @@ body {
     width: 10vw;
     background-color: #d1ccc0;
     position:fixed;
+    right: 10px;
     height: calc(100% - 60px);
     margin-left: 90vw;
     z-index:10;
     display: table;
     top: 60px;
+}
+
+.photo {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.photo img{
+    border-radius: 50%;
+    border: 5px solid #555;
+}
+
+.small ul{
+    font-family: 'IBM Plex Mono', monospace;
+    list-style: url("chevron_right.png");
 }
 
 /* SCOLLBAR */
@@ -192,7 +211,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #d1ccc0;
 }
 
 /* Handle */
