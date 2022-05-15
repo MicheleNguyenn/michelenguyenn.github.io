@@ -1,0 +1,193 @@
+body {
+    height:100%;
+}
+.header{
+     height: 60px;
+     position: fixed;
+     width: 100%;
+     background-color: #2b2b2b;
+     top: 0;
+     left: 0;
+     display: table;
+     z-index: 9;
+     }
+.header-title{
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 30px;
+     display: table-cell;
+     padding-left: 4vw;
+     vertical-align: middle;
+     color: #d1d1d1;
+}
+.content {
+     background-color: #d1ccc0;
+     top: 60px;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     position: fixed;
+     z-index: 8;
+     height: 100vh - 60px;
+     width: 100%;
+     overflow-y:auto;
+     overflow-x: hidden;
+}
+
+.content hr{
+     border: 0;
+     width: 460px;
+     height: 1px;
+     background: #2b2b2b;
+}
+
+.top {
+     font-size: 30px;
+     display: table-cell;
+     vertical-align: middle;
+     padding-right: 4vw;
+     text-align: right;
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 20px;
+     word-spacing: 30px;
+}
+
+.icons a {
+     color: #3b3b3b;
+     text-decoration: none;
+}
+
+.medium-link {
+     font-size: 20px;
+     color: #2b2b2b;
+     font-family: 'Oswald', sans-serif;
+     word-spacing: 15px;
+}
+.small{
+     font-size: 18px;
+     font-family: 'Arvo', sans-serif;
+     color: #3b3b3b;
+     line-height: 1.4;
+}
+.medium{
+     font-size: 50px;
+     font-family: 'Bebas Neue', sans-serif;
+     color: #3b3b3b;
+}
+
+.large {
+    font-size: 110px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #854242;
+}
+
+.content-text{
+    text-align: left;
+    line-height: 0.9;
+    padding-left: 20vw;
+    height: 100%;
+    width:75vw;
+    display:table;
+}
+
+.footer {
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.title-link{
+    text-decoration: none;
+    color: #d1d1d1;
+    font-size:20px;
+}
+
+
+.link{
+    text-decoration: none;
+    color: #854242;
+}
+
+.link:hover, .title-link:hover {
+    color: #854242;
+}
+
+.contact-button {
+    background-color: #d1ccc0;
+    border: 2px solid #854242;
+    color: #854242;
+    font-size:18px;
+    font-family: 'Arvo', sans-serif;
+    padding: 15px;
+    transition-duration: 0.4s;
+    cursor:pointer;
+    border-radius: 3px;
+}
+
+.contact-button:hover {
+    background-color: #854242;
+    color: #d1ccc0;
+}
+
+.cv-button {
+    background-color: #2b2b2b;
+    border: 2px solid #d1d1d1;
+    color: #d1d1d1;
+    font-size:20px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 5px 15px;
+    transition-duration: 0.4s;
+    cursor:pointer;
+    border-radius: 3px;
+}
+
+.cv-button:hover {
+    background-color: #d1d1d1;
+    border: 2px solid #854242;
+    color: #854242;
+}
+
+.end {
+    height:60px;
+    background-color: #d1ccc0;
+    width:100%;
+}
+
+.text {
+    display: table-cell;
+    vertical-align: middle;
+    width:90vh;
+}
+
+.icon-right{
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+    font-size: 50px;
+    line-height: 1.5;
+}
+
+.icon-right a{
+    color: #3b3b3b;
+}
+
+/* SCOLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  margin-top: 60px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
