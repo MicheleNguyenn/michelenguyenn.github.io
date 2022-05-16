@@ -19,6 +19,7 @@
             </div>
             <div class="top">
                 <form action="#">
+                    <a href="#aboutme" class="title-link">About</a>
                     <a href="works.html" class="title-link">Works</a>
                     <input type="submit" value="Resume" class="cv-button">
                 </form>
@@ -26,13 +27,14 @@
         </div>
         <div class="right-bar">
             <div class="icon-right">
+                <a href="mailto:michelenguyenn@gmail.com" class="link"><i class="fa fa-envelope"></i></a><br>
                 <a href="https://www.instagram.com/michelenguyenn/" class="link"><i class="fa fa-instagram"></i></a><br>
                 <a href="https://www.linkedin.com/in/michele-nguyen-893516239/" class="link"><i class="fa fa-linkedin"></i></a><br>
                 <a href="https://github.com/MicheleNguyenn" class="link"><i class="fa fa-github"></i></a>
             </div>
         </div>
         <div class="content">
-            <div class="content-text">
+            <div class="content-text reveal">
                 <div class="text">
                     <div class="medium">
                         HI, I'M
@@ -49,7 +51,7 @@
                     </form>
                 </div>
             </div>
-            <div class="content-text">
+            <div class="content-text reveal" id="aboutme">
                 <div class="text">
                     <div class="large">
                         ABOUT
@@ -60,7 +62,7 @@
                     <br><br>
                     <div class="small">
                         Hello! My name is Michele and my interest for coding started in 2009 when I decided to study Computer Science in highschool.<br>
-                        At that time the reason of my interest was videogames, but later on I developed an interest in web application.<br>
+                        At that time the reason of my interest was videogames, but later on I developed an interest for web applications.<br>
                         After highschool I decided to study Computer Science at Università degli Studi di Milano where I graduated in 2021.<br>
                         Currently I'm working at MaticMind as a Help Desk operator.<br><br>
                         Here's a few technologies I've been working with lately:
@@ -78,4 +80,24 @@
             </div>
         </div>
     </body>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+                var windowheight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+
+                if(revealTop < windowheight - revealPoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
 </html>
