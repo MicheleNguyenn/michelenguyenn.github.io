@@ -11,7 +11,9 @@ body{
     background: #d1ccc0;
     color: #3b3b3b;
     scroll-behavior: smooth;
-    width:100%;
+    width: 100%;
+    overflow: auto;
+    top: 0;
 }
 
 section{
@@ -53,12 +55,6 @@ section p{
 section ul{
     font-family: 'Poppins', sans-serif;
     list-style: inside url("chevron_right.png");
-}
-
-@media (max-width: 900px){
-    section h1{
-        font-size: 80px;
-    }
 }
 
 .reveal{
@@ -106,7 +102,7 @@ section ul{
     width: 10vw;
     background-color: #d1ccc0;
     position:fixed;
-    height: calc(100% - 60px);
+    height: 100vh;
     margin-left: 90vw;
     z-index:10;
     display: table;
@@ -177,6 +173,10 @@ section ul{
     background-color: #d1d1d1;
     border: 2px solid #854242;
     color: #854242;
+}
+
+.photo{
+    padding-right: 10vw;
 }
 
 .photo img{
