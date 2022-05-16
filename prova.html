@@ -28,7 +28,7 @@
             </div>
     </div>
     <section>
-        <div>
+        <div id="first" class="reveal">
             <h2>Hi, my name is</h2>
             <h1>MICHELE NGUYEN</h1>
             <h2>Full stack developer</h2>
@@ -39,10 +39,9 @@
         </div>
     </section>
     <section>
-        <div class="container reveal">
+        <div class="container reveal" id="aboutme">
             <div class="content">
-                <h1>About</h1>
-                <h2>Me</h2>
+                <h1 style="color: #3b3b3b;">About</h1> <h1>me</h1>
                 <p>
                     Hello! My name is Michele and my interest for coding started in 2009 when I decided to study Computer Science in highschool.<br>
                     At that time the reason of my interest was videogames, but later on I developed an interest for web applications.<br>
@@ -64,6 +63,12 @@
     </section>
 </body>
 <script type="text/javascript">
+        window.addEventListener('load', function () {
+            var revealfirst = document.getElementById('first');
+            revealfirst.classList.add('active');
+        })
+
+
         window.addEventListener('scroll', reveal);
 
         function reveal(){

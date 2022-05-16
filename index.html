@@ -34,8 +34,9 @@
             </div>
         </div>
         <div class="content">
+            <section>
             <div class="content-text reveal">
-                <div class="text">
+                <div class="text ">
                     <div class="medium">
                         HI, I'M
                     </div>
@@ -50,8 +51,8 @@
                         <input type="submit" value="Contact me" class="contact-button">
                     </form>
                 </div>
-            </div>
-            <div class="content-text reveal" id="aboutme">
+            </div></section>
+            <div class="content-text" id="aboutme">
                 <div class="text">
                     <div class="large">
                         ABOUT
@@ -81,6 +82,8 @@
         </div>
     </body>
     <script type="text/javascript">
+        var revealfirst = document.getElementById(first);
+
         window.addEventListener('scroll', reveal);
 
         function reveal(){

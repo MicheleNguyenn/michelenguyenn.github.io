@@ -10,13 +10,14 @@
 body{
     background: #d1ccc0;
     color: #3b3b3b;
+    scroll-behavior: smooth;
+    width:100%;
 }
 
 section{
     display: flex;
     align-items: center;
     padding-left: 20vw;
-    width: 80vw;
     margin-top:60px;
     height: calc(100vh - 60px)
 }
@@ -27,7 +28,6 @@ section .container{
 }
 
 section .content{
-
 }
 
 section h1{
@@ -35,6 +35,7 @@ section h1{
     font-family: 'Bebas Neue', cursive;
     color: #854242;
     line-height: 0.9;
+    display:inline
 }
 
 section h2{
@@ -64,7 +65,7 @@ section ul{
     position: relative;
     transform: translateY(70px);
     opacity:0;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 
 .reveal.active{
@@ -105,12 +106,10 @@ section ul{
     width: 10vw;
     background-color: #d1ccc0;
     position:fixed;
-    right: 10px;
     height: calc(100% - 60px);
     margin-left: 90vw;
     z-index:10;
     display: table;
-    top: 60px;
 }
 
 .link{
@@ -125,16 +124,16 @@ section ul{
 .header{
      height: 60px;
      position: fixed;
-     width: 100%;
+     width: 100vw;
      background-color: #2b2b2b;
      top: 0;
      left: 0;
      display: table;
-     z-index: 11;
-     }
+     z-index: 15;
+}
 .header-title{
      font-family: 'Bebas Neue', sans-serif;
-     font-size: 30px;
+     font-size: 35px;
      display: table-cell;
      padding-left: 4vw;
      vertical-align: middle;
@@ -184,4 +183,25 @@ section ul{
     border-radius: 50%;
     border: 5px solid #555;
     margin-left:8vw;
+}
+
+/* SCOLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
