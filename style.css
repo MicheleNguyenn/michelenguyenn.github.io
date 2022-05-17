@@ -203,6 +203,7 @@ section ul{
 
     .title-link{
         font-size: 20px;
+        display:inline;
     }
 
     .cv-button {
