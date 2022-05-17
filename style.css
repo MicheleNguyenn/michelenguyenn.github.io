@@ -83,11 +83,19 @@ section ul{
 .link{
     text-decoration: none;
     color: #3b3b3b;
-    font-size:30px;
+    font-size:80px;
 }
 
 .link:hover {
     color: #854242;
+}
+
+.contacts {
+     word-spacing:30px;
+}
+
+.contacts-container {
+    text-align:center;
 }
 
 .header{
