@@ -1,68 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">>
-    <title>Michele Nguyen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div class="header">
-        <div class="header-title">
-            MICHELE NGUYEN
-        </div>
-        <div class="top">
-            <form action="#">
-                <a href="#aboutme" class="title-link">About</a>
-                <a href="#works" class="title-link">Works</a>
-                <input type="submit" value="Resume" class="cv-button">
-            </form>
-        </div>
-    </div>
-    <div class="right-bar">
-            <div class="icon-right">
-                <a href="mailto:michelenguyenn@gmail.com" class="link"><i class="fa fa-envelope"></i></a><br>
-                <a href="https://www.instagram.com/michelenguyenn/" class="link"><i class="fa fa-instagram"></i></a><br>
-                <a href="https://www.linkedin.com/in/michele-nguyen-893516239/" class="link"><i class="fa fa-linkedin"></i></a><br>
-                <a href="https://github.com/MicheleNguyenn" class="link"><i class="fa fa-github"></i></a>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <title>Title</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-title">
+                MICHELE NGUYEN
             </div>
-    </div>
-    <section>
-        <div id="first" class="reveal">
-            <h2>Hi, my name is</h2>
-            <h1>MICHELE NGUYEN</h1>
-            <h2>Full stack developer</h2>
-            <br><br>
-            <form action="mailto:michelenguyenn@gmail.com">
-                <input type="submit" value="Contact me" class="contact-button">
-            </form>
-        </div>
-    </section>
-    <section>
-        <div class="container reveal" id="aboutme">
-            <div class="content">
-                <h1 style="color: #3b3b3b;">About</h1> <h1>me</h1>
-                <p>
-                    Hello! My name is Michele and my interest for coding started in 2009 when I decided to study Computer Science in highschool.<br>
-                    At that time the reason of my interest was videogames, but later on I developed an interest for web applications.<br>
-                    After highschool I decided to study Computer Science at Università degli Studi di Milano where I graduated in 2021.<br>
-                    Currently I'm working at MaticMind as a Help Desk operator.<br><br>
-                    Here's a few technologies I've been working with lately:
-                    <ul>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>HTML/CSS</li>
-                        <li>SQL</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="photo">
-                <img src="profilo.jpg">
+            <div class="top">
+                <form action="#">
+                    <a href="#about" class="title-link">About</a>
+                    <a href="#works" class="title-link">Works</a>
+                    <input type="submit" value="Resume" class="cv-button">
+                </form>
             </div>
         </div>
-    </section>
-</body>
-<script type="text/javascript">
+        <section>
+            <div id="first" class="reveal">
+                <h2>Hi, I'm</h2>
+                <h1>Michele Nguyen</h1>
+                <h2>Full stack developer</h2>
+                <br>
+                <form action="mailto:michelenguyenn@gmail.com">
+                    <input type="submit" value="Contact me" class="contact-button">
+                </form>
+            </div>
+        </section>
+        <section id="about">
+            <div class="row align-items-center reveal">
+                <div class="col-md-8">
+                    <h2 style="color:#854242">ABOUT ME</h2>
+                    <p>
+                        Hi, my name is Michele and I'm a full stack developer.<br>
+                        I always had a passion for technology and I started coding in highschool, but I developed an interest in web applications just recently.<br>
+                        I graduated in Computer Science at Università degli Studi di Milano in 2021 and now I'm working as a Help Desk operator at MaticMind.<br><br>
+                        Here's a few technologies I've been working with lately:<br>
+                        <div class="tech">
+                            > Python<br>
+                            > Django<br>
+                            > HTML/CSS<br>
+                            > Bootstrap<br>
+                            > SQL
+                        </div>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="profilo.jpg">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row align-items-center reveal">
+                <div class="col-md-12">
+                    <h2 style="color:#854242">works</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="card" style="background-color: transparent; border">
+                        <div class="card-body">
+                            <h5 class="card-title">Hopefully I will publish something here</h5>
+                            <p class="card-text">none</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="row align-items-center reveal">
+                <div class="col-md-12" style="text-align:center">
+                    <h2 style="color:#854242">CONTACTS</h2>
+                </div>
+                <div class="col-md-12" style="text-align:center">
+                    <p>You can find me here:</p>
+                </div>
+                <div class="col-md-12" style="text-align:center; word-spacing:30px">
+                    <a href="mailto:michelenguyenn@gmail.com" class="link" style="font-size:80px"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/michelenguyenn/" class="link" style="font-size:80px"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/michele-nguyen-893516239/" class="link" style="font-size:80px"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/MicheleNguyenn" class="link" style="font-size:80px"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script type="text/javascript">
         window.addEventListener('load', function () {
             var revealfirst = document.getElementById('first');
             revealfirst.classList.add('active');
