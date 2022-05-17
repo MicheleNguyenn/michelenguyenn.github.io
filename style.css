@@ -198,16 +198,17 @@ section ul{
     }
 
     .header{
-        height: 25px;
+        height: 7vh;
     }
 
     .title-link{
         font-size: 20px;
-        display:inline;
+        visibility:hidden;
     }
 
     .cv-button {
         font-size: 20px;
+        visibility:hidden;
     }
 
     .header-title{
