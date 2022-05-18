@@ -230,4 +230,10 @@ section ul{
     .link{
         font-size: 40px;
     }
+
+    .panda-run h3{
+    text-align:center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
 }
