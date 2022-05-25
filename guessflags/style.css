@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.sect{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #def7ff;
+    justify-content: center;
+    width: 100vw;
+    padding-top:70px;
+}
+
+.sect-result{
+    display: flex;
+    background: #def7ff;
+    justify-content: center;
+    width: 100vw;
+    padding-top:calc(10vh + 70px);
+    padding-bottom:10vh;
+    text-align:center;
+}
+
+
+.row{
+
+    text-align: center;
+    width: 90%;
+}
+
+.game img {
+    width:300px;
+    height:200px;
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.game {
+    display:none;
+    text-align: center;
+}
+
+.start {
+    width: 100px;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+}
+
+.input-bar {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+.results{
+    display:none;
+    justify-content: center;
+}
+
+td {
+    width:200px;
+}
+
+td img {
+    max-height: 120px;
+    max-width:150px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.results img {
+    width:130px;
+    height:90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size:24px;
+}
+
+.results p {
+    font-size:20px;
+    line-height: 1;
+}
+
+.score p{
+    font-size:30px;
+}
+
+.game p{
+    line-height: 0.8;
+}
+
+.buttons {
+    width:30px;
+    height:30px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+.header {
+    display:flex;
+    background: black;
+    height: 70px;
+    position: absolute;
+    width: 100%;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+
+.giveup {
+    padding-top:10px;
+    font-size:20px;
+}
+
+.giveup button{
+    width:70px;
+    border-radius: 4px;
+    border: 1px solid;
+}

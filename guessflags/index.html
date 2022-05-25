@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="prova.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>guess the flags</h1>
+    </div>
+    <section class="sect" id="sect">
+        <div class="row" id="content">
+            <div class="col-md-12 head" id="head">
+
+                <button onclick="init()" class="start" id="start">Start</button>
+            </div>
+            <div class="game col-md-12" id="game">
+                <div>
+                    <p>Score: <span id="score">0</span>/194</p>
+                    <p id="time"></p>
+                    <button onclick="prev()" class="buttons"><</button>
+                    <img src="" id="flag" style="display:inline">
+                    <button onclick="next()" class="buttons"> > </button>
+                    <br>
+                </div>
+                <div class="container">
+                    <input id="input_nation" oninput="check()" class="input-bar">
+                </div>
+                <div class="giveup">
+                    <button onclick="result()">Give up</button>
+                </div>
+            </div>
+        </div>
+        <div class="results row" id="results">
+            <div class="col-md-12 score">
+                <p>Score: <span id="score_2">0</span>/194</p>
+            </div>
+            <div class="col-md-12">
+                <table id="table_results">
+
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
