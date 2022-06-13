@@ -10,7 +10,7 @@ body{
 
 }
 
-section{
+.home{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -20,13 +20,40 @@ section{
     width: 100%;
 }
 
+.sect{
+    display: flex;
+    align-items: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    background: #d1ccc0;
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom:10vh;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    background: #d1ccc0;
+    width: 100%;
+    padding-top: 20vh;
+    padding-bottom:2vh;
+}
+
+.footer p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
 .row{
     width:100%;
 }
 
-img{
+.profile img{
     width:90%;
-    border-radius: 50%;
+    border-radius: 5%;
 }
 
 section h1 {
@@ -37,7 +64,7 @@ section h1 {
 }
 
 section h2{
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'Bebas Neue', cursive;
     line-height: 0.9;
     color: #3b3b3b;
@@ -66,6 +93,70 @@ section ul{
     opacity:1;
 }
 
+.reveal-first{
+    position: relative;
+    transform: translateY(70px);
+    opacity:0;
+    transition: all 0.7s ease;
+}
+
+.reveal-first.active{
+    transform: translateY(0px);
+    opacity:1;
+}
+
+.reveal-second{
+    position: relative;
+    transform: translateY(70px);
+    opacity:0;
+    transition: all 0.7s ease;
+    transition-delay: 0.2s;
+}
+
+.reveal-second.active{
+    transform: translateY(0px);
+    opacity:1;
+}
+
+.reveal-third{
+    position: relative;
+    transform: translateY(70px);
+    opacity:0;
+    transition: all 0.7s ease;
+    transition-delay: 0.4s;
+}
+
+.reveal-third.active{
+    transform: translateY(0px);
+    opacity:1;
+}
+
+.reveal-img{
+    position: relative;
+    transform: translateY(70px);
+    opacity:0;
+    transition: all 0.7s ease;
+    transition-delay: 0.8s;
+}
+
+.reveal-img.active{
+    transform: translateY(0px);
+    opacity:1;
+}
+
+.reveal-button{
+    position: relative;
+    transform: translateY(70px);
+    opacity:0;
+    transition: all 0.7s ease;
+    transition-delay: 1.2s;
+}
+
+.reveal-button.active{
+    transform: translateY(0px);
+    opacity:1;
+}
+
 .contact-button {
     text-decoration: none;
     background-color: #d1ccc0;
@@ -87,7 +178,7 @@ section ul{
 .link{
     text-decoration: none;
     color: #3b3b3b;
-    font-size:80px;
+    font-size:60px;
 }
 
 .link:hover {
@@ -148,20 +239,20 @@ section ul{
     color: #d1d1d1;
     font-size:25px;
     font-family: 'Bebas Neue', sans-serif;
-    padding: 5px 15px;
+    padding: 2px 15px;
     transition-duration: 0.4s;
     cursor:pointer;
     border-radius: 3px;
 }
 
 .cv-button:hover {
-    background-color: #d1d1d1;
     border: solid #854242;
     color: #854242;
 }
 
 .tech {
     font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
 }
 
 .card-img{
@@ -171,6 +262,21 @@ section ul{
 
 .card-title{
     font-size: 35px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.card-link{
+    text-decoration: none;
+    color: #2b2b2b
+}
+
+.card-link:hover{
+    text-decoration: none;
+    color: #854242;
+}
+
+h3{
+    font-size: 30px;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -195,8 +301,11 @@ section ul{
 }
 
 .img-container{
+    display:flex;
+    align-items: center;
     position: relative;
     width:100%;
+    height:100%;
 }
 
 .img-container:hover .image {
@@ -217,20 +326,60 @@ section ul{
     border:none;
 }
 
+.gaming-card{
+    display: flex;
+    align-items: center;
+}
+
+.gaming-card img {
+    width:100%;
+    height: auto;
+}
+
+.gaming-card-text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #D4D4D4;
+}
+
+.gaming-card-text a{
+    text-decoration: none;
+    color: #854242;
+}
+
+.gaming-card-text h3{
+    padding-top: 10px;
+}
+
+.gaming-card-text p {
+    padding-left: 10px;
+}
+
+.gaming-card-text span {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
 @media (max-width:1080px){
     img{
-        max-width: 120%;
+        max-width: 150%;
     }
-    section{
-        padding-left: 2vw;
-        padding-right: 2vw;
+
+    .home{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .sect{
+        padding-left: 4vw;
+        padding-right: 4vw;
     }
     section h1 {
-    font-size: 90px;
-    font-family: 'Bebas Neue', cursive;
-    color: #854242;
-    line-height: 0.9;
-}
+        font-size: 90px;
+        font-family: 'Bebas Neue', cursive;
+        color: #854242;
+        line-height: 0.9;
+    }
 
     section h2{
         font-size: 40px;
@@ -241,12 +390,27 @@ section ul{
 }
 
 @media (max-width:768px){
+    .panda{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
+    .profile{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+
     img{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 100%;
     }
+
     section h1 {
     font-size: 70px;
     font-family: 'Bebas Neue', cursive;
