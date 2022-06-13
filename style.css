@@ -50,6 +50,7 @@
 .profile img{
     width:90%;
     border-radius: 5%;
+    box-shadow: 15px 15px #bdb7aa;
 }
 
 section h1 {
@@ -335,7 +336,8 @@ h3{
 .gaming-card-text{
     margin-top: 30px;
     margin-bottom: 30px;
-    background: #D4D4D4;
+    background: #E8EBE4;
+    box-shadow: 8px 8px #bdb7aa;
 }
 
 .gaming-card-text a{
