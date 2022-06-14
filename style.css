@@ -252,9 +252,10 @@ section ul{
     font-size: 16px;
 }
 
-.card-img{
-    height:auto;
-    width: 100%;
+.card{
+    padding-right: 0;
+    padding-left: 0;
+    background: #E8EBE4;
 }
 
 .card-title{
@@ -270,6 +271,11 @@ section ul{
 .card-link:hover{
     text-decoration: none;
     color: #854242;
+}
+
+.card-footer{
+    background: #E8EBE4;
+    border:0;
 }
 
 h3{
@@ -299,10 +305,8 @@ h3{
 
 .img-container{
     display:flex;
-    align-items: center;
     position: relative;
     width:100%;
-    height:100%;
 }
 
 .img-container:hover .image {
